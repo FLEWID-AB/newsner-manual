@@ -1,0 +1,27 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+- title: Newsner
+  product: Newsner Manual
+  version: 1.0
+  folders:
+
+  - title: Articles
+    output: web
+    folderitems:
+    - title: Images
+      url: /articles-image.html
+      output: web
+      type: homepage           
+    - title: Facebook
+      url: /articles-facebook.html
+      output: web
+      type: homepage
+    - title: Instagram
+      url: /articles-instagram.html
+      output: web
+      type: homepage      
+    - title: Youtube
+      url: /articles-youtube.html
+      output: web
+      type: homepage            
