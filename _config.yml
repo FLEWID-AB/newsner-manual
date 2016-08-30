@@ -8,7 +8,7 @@ topnav_title: Newsner main documentation
 site_title: Newsner main documentation
 # this appears in the html browser tab for the site title (seen mostly by search engines, not users)
 
-company_name: Your company
+company_name: Flewid AB
 # this appears in the footer
 
 github_editme_path: FLEWID-AB/newsner-manual
@@ -101,4 +101,6 @@ description: "Manual for Newsner. Nothing more"
 # the description is used in the feed.xml file
 
 # needed for sitemap.xml file only
-url: http://idratherbewriting.com
+url: https://flewid-ab.github.io
+baseurl: /newsner-manual
+
