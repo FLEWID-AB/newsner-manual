@@ -3,9 +3,9 @@
     <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How to embed different facebook types">
-<meta name="keywords" content="general,  general, guidelines">
-<title>General guidelines | Newsner main documentation</title>
+<meta name="description" content="How to work with images">
+<meta name="keywords" content="image,  image, figcaption, caption">
+<title>Image | Newsner main documentation</title>
 <link rel="stylesheet" href="css/syntax.css">
 
 
@@ -104,7 +104,7 @@
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
                 
-			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:philip@flewid.se?subject=Newsner main documentation f eedback&body=I have some feedback about the General guidelines page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
+			<li><a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:philip@flewid.se?subject=Newsner main documentation f eedback&body=I have some feedback about the Image page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a><li>
 
 		
                 <!--comment out this block if you want to hide search-->
@@ -120,7 +120,7 @@
                                 searchInput: document.getElementById('search-input'),
                                 resultsContainer: document.getElementById('results-container'),
                                 dataSource: 'search.json',
-                                searchResultTemplate: '<li><a href="{url}" title="General guidelines">{title}</a></li>',
+                                searchResultTemplate: '<li><a href="{url}" title="Image">{title}</a></li>',
                     noResultsText: 'No results found.',
                             limit: 10,
                             fuzzy: true,
@@ -166,7 +166,7 @@
             
             
             
-            <li><a href="articles-image.html">Images</a></li>
+            <li class="active"><a href="articles-image.html">Images</a></li>
             
             
             
@@ -211,7 +211,7 @@
     <!-- Content Column -->
     <div class="col-md-9">
         <div class="post-header">
-   <h1 class="post-title-main">General guidelines</h1>
+   <h1 class="post-title-main">Image</h1>
 </div>
 
 
@@ -219,7 +219,7 @@
 <div class="post-content">
 
    
-    <div class="summary">How to embed different facebook types</div>
+    <div class="summary">How to work with images</div>
    
 
     
@@ -251,12 +251,52 @@ $('#toc').on('click', 'a', function() {
 
     
 
-    <a target="_blank" href="https://github.com/FLEWID-AB/newsner-manual/_pages/articles/articles-general.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
+    <a target="_blank" href="https://github.com/FLEWID-AB/newsner-manual/_pages/articles/articles-image.html.md" class="btn btn-default githubEditButton" role="button"><i class="fa fa-github fa-lg"></i> Edit me</a>
     
 
     
 
-  
+  <h3 id="images-with-caption">1. Images with caption</h3>
+<p>When inserting images you always get the option of adding a caption to the image. However if you miss to do this when inserting the image you can always add it later on.
+Before:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+</code></pre>
+</div>
+
+<p>After:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://the-url-to–what-ever"</span> <span class="na">target=</span><span class="s">"_blank"</span><span class="nt">&gt;</span>
+        Here you should write your figcaption
+      <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="images-without-caption">2. Images without caption</h3>
+<p>In those cases where you don’t have any caption you should always remove the caption. Otherwise Instant Articles will complain about it when publishing it to IA.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span> <span class="c">&lt;!-- Remove this and everything below until the close of this tag --&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span> <span class="c">&lt;!-- Remove this --&gt;</span>   
+  <span class="nt">&lt;/figure&gt;</span>
+</code></pre>
+</div>
+
+<p>After:</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+</code></pre>
+</div>
 
 
     <div class="tags">

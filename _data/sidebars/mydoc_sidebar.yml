@@ -9,6 +9,10 @@ entries:
   - title: Articles
     output: web
     folderitems:
+    - title: Images
+      url: /articles-image.html
+      output: web
+      type: homepage           
     - title: Facebook
       url: /articles-facebook.html
       output: web

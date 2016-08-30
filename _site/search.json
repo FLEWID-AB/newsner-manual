@@ -26,6 +26,16 @@
 
 
 {
+"title": "Image",
+"tags": "image",
+"keywords": "image, figcaption, caption",
+"url": "articles-image.html",
+"summary": "How to work with images"
+},
+
+
+
+{
 "title": "Getting started with the Documentation Theme for Jekyll",
 "tags": "getting_started",
 "keywords": "sample homepage",
