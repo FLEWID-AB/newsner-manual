@@ -1,7 +1,7 @@
 ---
 title: Facebook embeds
-tags: [embeds]
 keywords: facebook, post, facebook post, facebook video, video, embedd
+tags: [embed]
 last_updated: August 30, 2016
 summary: "How to embed different facebook types"
 sidebar: mydoc_sidebar

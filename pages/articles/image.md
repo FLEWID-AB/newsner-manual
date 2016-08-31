@@ -9,8 +9,19 @@ permalink: articles-image.html
 folder: articles
 ---
 
+### 1. Images in general
+When adding images it normaly looks like this
 
-### 1. Images with caption
+```html
+  <figure> <!-- We should always wrap the images in figure so it follows the latest HTML standards -->
+    <img src="..."> <!-- This is the actual image -->
+    <figcaption>
+      <!-- This is the caption, reference to the image, note that this could be a link -->
+    </figcaption>
+  </figure>
+```
+
+### 2. Images with caption
 When inserting images you always get the option of adding a caption to the image. However if you miss to do this when inserting the image you can always add it later on.
 Before:
 
@@ -33,7 +44,7 @@ After:
   </figure>
 ```
 
-### 2. Images without caption
+### 3. Images without caption
 In those cases where you don't have any caption you should always remove the caption. Otherwise Instant Articles will complain about it when publishing it to IA.
 
 

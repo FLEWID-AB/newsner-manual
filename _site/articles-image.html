@@ -96,10 +96,6 @@
                 
                 
                 
-                <li><a href="news">News</a></li>
-                
-                
-                
                 <!-- entries with drop-downs appear here -->
                 <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
                 
@@ -163,6 +159,13 @@
     <li>
         <a href="#">Articles</a>
         <ul>
+            
+            
+            
+            <li><a href="index.html">Welcome</a></li>
+            
+            
+            
             
             
             
@@ -256,7 +259,19 @@ $('#toc').on('click', 'a', function() {
 
     
 
-  <h3 id="images-with-caption">1. Images with caption</h3>
+  <h3 id="images-in-general">1. Images in general</h3>
+<p>When adding images it normaly looks like this</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span> <span class="c">&lt;!-- We should always wrap the images in figure so it follows the latest HTML standards --&gt;</span>
+    <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"..."</span><span class="nt">&gt;</span> <span class="c">&lt;!-- This is the actual image --&gt;</span>
+    <span class="nt">&lt;figcaption&gt;</span>
+      <span class="c">&lt;!-- This is the caption, reference to the image, note that this could be a link --&gt;</span>
+    <span class="nt">&lt;/figcaption&gt;</span>
+  <span class="nt">&lt;/figure&gt;</span>
+</code></pre>
+</div>
+
+<h3 id="images-with-caption">2. Images with caption</h3>
 <p>When inserting images you always get the option of adding a caption to the image. However if you miss to do this when inserting the image you can always add it later on.
 Before:</p>
 
@@ -279,7 +294,7 @@ Before:</p>
 </code></pre>
 </div>
 
-<h3 id="images-without-caption">2. Images without caption</h3>
+<h3 id="images-without-caption">3. Images without caption</h3>
 <p>In those cases where you don’t have any caption you should always remove the caption. Otherwise Instant Articles will complain about it when publishing it to IA.</p>
 
 <div class="language-html highlighter-rouge"><pre class="highlight"><code>  <span class="nt">&lt;figure&gt;</span>
@@ -305,6 +320,8 @@ Before:</p>
         
         
         
+        <a href="tag_image.html" class="btn btn-default navbar-btn cursorNorm" role="button">image</a>
+        
         
         
     </div>
@@ -319,8 +336,8 @@ Before:</p>
             <div class="row">
                 <div class="col-lg-12 footer">
                &copy;2016 Flewid AB. All rights reserved. <br />
-<span>Page last updated:</span> August 30, 2016<br/> Site last generated: Aug 30, 2016 <br />
-<p><img src="images/company_logo.png" alt="Company logo"/></p>
+<span>Page last updated:</span> August 30, 2016<br/> Site last generated: Aug 31, 2016 <br /><br />
+<p><img src="images/flewid.png" alt="Company logo" style="width: 100px;"/></p>
                 </div>
             </div>
 </footer>
